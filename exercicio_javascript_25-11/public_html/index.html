@@ -6,11 +6,66 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Exercício JavaScript</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <script type="text/javascript">
+
+            function min(valor1, valor2) {
+                var minimo = Math.min(valor1, valor2);
+                return minimo;
+            }
+
+            function IsEven(valor) {
+                var p = true;
+                if ((valor - 2) % 2 === 0) {
+                } else {
+                    p = false;
+                }
+                return p;
+            }
+
+            function countBs(palavra) {
+                var cont = 0;
+                for (var i = 0; i < palavra.length; i++) {
+                    if (palavra[i] === "B") {
+                        cont++;
+                    }
+                } 
+               return cont;
+            }
+
+            function countChar(palavra, letra) {
+                var cont = 0;
+                for (var i = 0; i < palavra.length; i++) {
+                    if (palavra[i] === letra) {
+                        cont++;
+                    }
+                }
+                return cont;
+            }
+
+//            alert(min(0, 10));
+//            alert(min(0, -10));
+//
+//            console.log(IsEven(50));
+//            alert(IsEven(50));
+//            // → verdadeira
+//            console.log(IsEven(75));
+//            alert(IsEven(75));
+//            // → falsa
+//            console.log(IsEven(-1));
+//            alert(IsEven(-1));
+//            // → ?? === False
+//            // Seu código aqui.
+            console.log(countBs("BBC"));
+            alert(countBs("BBC"));
+            // 2 →
+            console.log(countChar("kakkerlak", "k"));
+            alert(countChar("kakkerlak", "k"));
+            // 4 →
+        </script>
     </body>
 </html>
